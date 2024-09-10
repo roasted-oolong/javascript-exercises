@@ -6,13 +6,17 @@ const repeatString = function(word, times) {
         if (i < times) {
             string.push(word);
         } else {
-            break;
+            break;        
         }
 
         i++;
     };
 
-    return string.join('');
+    if (times < 0) {
+        return 'ERROR';
+      } else {
+        return string.join('');
+    }
 };
 
 // Do not edit below this line
