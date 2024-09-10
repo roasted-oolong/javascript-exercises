@@ -10,7 +10,7 @@ describe('repeatString', () => {
   test('repeats the string 1 times', () => {
     expect(repeatString('hi', 1)).toEqual('hi');
   });
-  test.skip('repeats the string 0 times', () => {
+  test('repeats the string 0 times', () => {
     expect(repeatString('bye', 0)).toEqual('');
   });
   test.skip('returns ERROR with negative numbers', () => {
