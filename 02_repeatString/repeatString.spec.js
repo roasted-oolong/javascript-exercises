@@ -31,7 +31,7 @@ describe('repeatString', () => {
     was randomly generated. */
     expect(repeatString('odin', number).match(/((odin))/g).length).toEqual(number);
   });
-  test.skip('works with blank strings', () => {
+  test('works with blank strings', () => {
     expect(repeatString('', 10)).toEqual('');
   });
 });
