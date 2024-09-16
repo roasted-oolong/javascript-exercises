@@ -13,7 +13,7 @@ describe('convertToCelsius', () => {
 });
 
 describe('convertToFahrenheit', () => {
-  test.skip('works', () => {
+  test('works', () => {
     expect(convertToFahrenheit(0)).toEqual(32);
   });
   test.skip('rounds to 1 decimal', () => {
