@@ -2,8 +2,9 @@ const sumAll = function(firstInt, secondInt) {
     const numbers = [];
     let total = 0;
     let i = firstInt;
+    if (firstInt < 0 || secondInt < 0) return "ERROR";
 
-    while (i >= firstInt && i <= secondInt || i >= secondInt && i <= firstInt) {
+    while (i >= firstInt && i <= secondInt || i >= secondInt && i <= firstInt) {     
         if (i >= firstInt && i <= secondInt) {
             numbers.push(i)
             i++ 
