@@ -4,8 +4,13 @@ const sumAll = function(firstInt, secondInt) {
     let i = firstInt;
 
     while (i >= firstInt && i <= secondInt || i >= secondInt && i <= firstInt) {
-        numbers.push(i)
-        i++
+        if (i >= firstInt && i <= secondInt) {
+            numbers.push(i)
+            i++ 
+        } else if (i >= secondInt && i <= firstInt) {
+            numbers.push(i)
+            i--
+        }
     }
 
     for (let i = 0;  i < numbers.length; i++) {
