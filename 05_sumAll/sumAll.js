@@ -2,7 +2,11 @@ const sumAll = function(firstInt, secondInt) {
     const numbers = [];
     let total = 0;
     let i = firstInt;
-    if (Math.sign(firstInt, secondInt) === -1 || Number.isInteger(firstInt, secondInt) === false || typeof(firstInt, secondInt) === "string") return "ERROR";
+    if (Math.sign(firstInt, secondInt) === 1 && Number.isInteger(firstInt, secondInt) === true && typeof(firstInt, secondInt) === "number") {
+        //do nothing
+    } else {
+        return "ERROR";
+    }
 
     while (i >= firstInt && i <= secondInt || i >= secondInt && i <= firstInt) {     
         if (i >= firstInt && i <= secondInt) {
@@ -11,8 +15,6 @@ const sumAll = function(firstInt, secondInt) {
         } else if (i >= secondInt && i <= firstInt) {
             numbers.push(i)
             i--
-        } else {
-            return "ERROR";
         }
     }
 
