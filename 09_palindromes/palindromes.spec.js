@@ -19,7 +19,7 @@ describe('palindromes', () => {
   test('doesn\'t just always return true', () => {
     expect(palindromes('ZZZZ car, a man, a maracaz.')).toBe(false);
   });
-  test.skip('works with numbers in a string', () => {
+  test('works with numbers in a string', () => {
     expect(palindromes('rac3e3car')).toBe(true);
   });
   test.skip('works with unevenly spaced numbers in a string', () => {
