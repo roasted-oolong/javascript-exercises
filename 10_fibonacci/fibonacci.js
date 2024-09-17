@@ -1,11 +1,9 @@
 const fibonacci = function(num) {
     let sum = 0;
     let i = 0;
-    const fibonacciArray = [0, 1]
-    
-    if (typeof num === "string") {
-        return Number(num);
-    }
+    const fibonacciArray = [0, 1];
+    num = Number(num);
+
     if (Math.sign(num) === -1) {
         return "OOPS";
     }

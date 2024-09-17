@@ -28,7 +28,7 @@ describe('fibonacci', () => {
   test('DOES accept strings', () => {
     expect(fibonacci("1")).toBe(1);
   });
-  test.skip('DOES accept strings', () => {
+  test('DOES accept strings', () => {
     expect(fibonacci("2")).toBe(1);
   });
   test.skip('DOES accept strings', () => {
