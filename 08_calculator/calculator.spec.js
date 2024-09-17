@@ -21,7 +21,7 @@ describe('subtract', () => {
 });
 
 describe('sum', () => {
-  test.skip('computes the sum of an empty array', () => {
+  test('computes the sum of an empty array', () => {
     expect(calculator.sum([])).toBe(0);
   });
 
