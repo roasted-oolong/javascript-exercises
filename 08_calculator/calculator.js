@@ -32,8 +32,8 @@ const multiply = function(array) {
 }
 };
 
-const power = function() {
-	
+const power = function(base, exponent) {
+	return base ** exponent;
 };
 
 const factorial = function() {
