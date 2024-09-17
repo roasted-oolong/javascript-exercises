@@ -36,8 +36,12 @@ const power = function(base, exponent) {
 	return base ** exponent;
 };
 
-const factorial = function() {
-	
+const factorial = function(number) {
+	  if (number === 0) {
+      return 1;
+    } else {
+      return (number * factorialize(number - 1));
+    }
 };
 
 // Do not edit below this line
