@@ -13,13 +13,13 @@ describe('fibonacci', () => {
   test('15th fibonacci number is 610', () => {
     expect(fibonacci(15)).toBe(610);
   });
-  test.skip('25th fibonacci number is 75025', () => {
+  test('25th fibonacci number is 75025', () => {
     expect(fibonacci(25)).toBe(75025);
   });
-  test.skip('0th fibonacci number is 0', () => {
+  test('0th fibonacci number is 0', () => {
     expect(fibonacci(0)).toBe(0);
   });
-  test.skip('doesn\'t accept negatives', () => {
+  test('doesn\'t accept negatives', () => {
     expect(fibonacci(-25)).toBe("OOPS");
   });
   test.skip('DOES accept strings', () => {
