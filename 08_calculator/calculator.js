@@ -37,7 +37,7 @@ const power = function(base, exponent) {
 };
 
 const factorial = function(number) {
-	  if (number === 0) {
+	  if (number === 0 || number === 1) {
       return 1;
     } else {
       return (number * factorialize(number - 1));
