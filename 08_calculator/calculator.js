@@ -11,7 +11,7 @@ const sum = function(array) {
   if(array.length < 1 || array == undefined){
     return total;
 } else if (array.length >= 1) {
-  for (var i = 0; i < numbers.length; i++) {
+  for (var i = 0; i < array.length; i++) {
     total += array[i]
     return total;
 }
