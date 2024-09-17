@@ -9,7 +9,7 @@ describe('add', () => {
     expect(calculator.add(2, 2)).toBe(4);
   });
 
-  test.skip('adds positive numbers', () => {
+  test('adds positive numbers', () => {
     expect(calculator.add(2, 6)).toBe(8);
   });
 });
