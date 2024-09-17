@@ -4,7 +4,7 @@ const fibonacci = function(num) {
     const fibonacciArray = [0, 1]
     
     if (typeof num === "string") {
-        let num = Number(num);
+        return Number(num);
     }
     if (Math.sign(num) === -1) {
         return "OOPS";
