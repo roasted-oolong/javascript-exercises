@@ -7,7 +7,7 @@ describe('fibonacci', () => {
   test('6th fibonacci number is 8', () => {
     expect(fibonacci(6)).toBe(8);
   });
-  test.skip('10th fibonacci number is 55', () => {
+  test('10th fibonacci number is 55', () => {
     expect(fibonacci(10)).toBe(55);
   });
   test.skip('15th fibonacci number is 610', () => {
