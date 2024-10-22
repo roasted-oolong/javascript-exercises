@@ -6,18 +6,24 @@ const subtract = function(intOne, intTwo) {
 	return intOne - intTwo;
 };
 
-const sum = function(array) {
-  let total = 0;
 
-  if(array.length < 1 || array == undefined){
-    return total;
-} else if (array.length >= 1) {
-  for (let i = 0; i < array.length; i++) {
-    total += array[i]
+const sum = (array) => {
+  return array
+          .reduce((total, current) => total + current, 0); 
 }
-  return total;
-}
-};
+
+// const sum = function(array) {
+//   let total = 0;
+
+//   if(array.length < 1 || array == undefined){
+//     return total;
+// } else if (array.length >= 1) {
+//   for (let i = 0; i < array.length; i++) {
+//     total += array[i]
+// }
+//   return total;
+// }
+// };
 
 const multiply = (array) => {
   return array
