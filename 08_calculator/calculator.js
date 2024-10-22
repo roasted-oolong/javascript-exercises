@@ -32,9 +32,7 @@ const multiply = function(array) {
 }
 };
 
-const power = function(base, exponent) {
-	return base ** exponent;
-};
+const power = (base, exponent) => base ** exponent;
 
 const factorial = (number) => number <= 1 ? 1 : number * factorial(number - 1);
 
