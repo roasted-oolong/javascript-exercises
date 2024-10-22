@@ -19,18 +19,23 @@ const sum = function(array) {
 }
 };
 
-const multiply = function(array) {
-  let total = 1;
+const multiply = (array) => {
+  return array
+          .reduce((total, current) => total * current); 
+}
+
+// const multiply = function(array) {
+//   let total = 1;
   
-  if(array.length < 1 || array == undefined){
-    return total;
-} else if (array.length >= 1) {
-  for (let i = 0; i < array.length; i++) {
-    total *= array[i]
-}
-  return total;
-}
-};
+//   if(array.length < 1 || array == undefined){
+//     return total;
+// } else if (array.length >= 1) {
+//   for (let i = 0; i < array.length; i++) {
+//     total *= array[i]
+// }
+//   return total;
+// }
+// };
 
 const power = (base, exponent) => base ** exponent;
 
