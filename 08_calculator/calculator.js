@@ -36,13 +36,7 @@ const power = function(base, exponent) {
 	return base ** exponent;
 };
 
-const factorial = function(number) {
-	  if (number <= 1) {
-      return 1;
-    } else {
-      return number * factorial(number - 1);
-    }
-};
+const factorial = (number) => number <= 1 ? 1 : number * factorial(number - 1);
 
 // Do not edit below this line
 module.exports = {
